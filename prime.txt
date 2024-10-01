@@ -1,0 +1,85 @@
+ 
+1.write program print sum of non-primetive number...?
+input:763328
+
+number=prompt("enter the number :")
+nonprimesum=0
+for(num of number){
+    if(num>1){
+        for(i=2;i<num;i++){
+            if(num%i==0){
+                nonprimesum+=Number(num)
+                break
+            }
+        }
+    }
+}
+console.log(nonprimesum)
+   ANS:14
+
+2.write program to check wether is prime or not by using function..?
+  input:7
+
+function prime(num){
+    if(num>1){
+        count=0
+        for(i=2;i<num;i++){
+            if(num%i==0){
+                return "not prime number"
+            }
+        }
+        return "prime"
+    }
+    return "enter valid number"
+}
+input=+prompt("enter the number :")
+console.log(prime(input))
+     ANS: 7 is orime
+
+3. write program check wether prime sum is bigger or not prime sum is bigger ..?
+   input :163379
+input =prompt("enter the umber :")
+npSum=0,pSum=0
+for(num of input){
+    if(num>1){
+        c=0
+        for(i=2;i<num;i++){
+            if(num%i==0){
+                npSum=npSum+Number(num)
+                c++
+                break
+            }
+        }
+        if(c==0){
+            pSum=pSum+Number(num)
+        }
+    }
+}
+res=(pSum>npSum)?"prime sum is bigger":"non prime sum is bigger"
+console.log(res)
+   ANS: enter the umber :163379
+   non prime sum is bigger
+4. write program check wether prime sum is bigger or not prime sum is bigger ..?
+input :2045
+
+input =prompt("enter the umber :")
+npSum=0,pSum=0
+for(num of input){
+    if(num>1){
+        c=0
+        for(i=2;i<num;i++){
+            if(num%i==0){
+                npSum=npSum+Number(num)
+                c++
+                break
+            }
+        }
+        if(c==0){
+            pSum=pSum+Number(num)
+        }
+    }
+}
+res=(pSum>npSum)?"prime sum is bigger":"non prime sum is bigger"
+console.log(res)
+    ANS: enter the umber :2045
+    prime sum is bigger
